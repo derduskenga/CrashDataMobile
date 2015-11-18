@@ -1,0 +1,274 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".LocationTime" >
+    
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" >
+	
+	    <LinearLayout 
+        android:id="@+id/top_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/panel_shape"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:padding="10dip">        
+        
+        <TextView     
+            android:text="Location and Time"        
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#336699"
+            android:textStyle="bold"/>        
+       
+    </LinearLayout>
+    
+	    <LinearLayout 
+	        android:id="@+id/id_bar"
+	        android:layout_below="@id/top_bar"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:background="@layout/grey_gradient"
+	        android:gravity="center"
+	        android:layout_margin="10dip"
+	        android:padding="5dip">
+        
+	        <TextView     
+	            android:text="Accident ID"        
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:padding="5dip"
+	            android:layout_marginTop="15dip"
+	            android:layout_marginLeft="10dp"
+	            android:layout_weight="1"
+	            android:singleLine="true"
+	            android:textSize="18dip"
+	            android:textColor="#333"
+	            android:textStyle="bold"/>
+	        
+	        <EditText android:id="@+id/txt_acc_id"     
+	            android:hint="Accident ID" 
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:padding="5dip"
+	            android:layout_marginLeft="10dp"
+	            android:layout_weight="1"
+	            android:singleLine="true"
+	            android:textSize="18dip"
+	            android:textColor="#FFF"
+	            android:textStyle="bold"/>
+        
+        </LinearLayout>
+    
+	    <LinearLayout 
+	        android:id="@+id/info_bar"
+	        android:layout_below="@id/id_bar"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:background="@layout/grey_gradient"
+	        android:gravity="center"
+	        android:layout_margin="10dip"
+	        android:padding="5dip">        
+                
+        <TextView     
+            android:text="Area Name/ City"        
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dip"
+            android:layout_marginTop="15dip"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:textSize="18dip"
+            android:textColor="#333"
+            android:textStyle="bold"/>
+        
+        <EditText
+            android:id="@+id/txt_area_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:hint="AreaName"
+            android:padding="5dip"
+            android:singleLine="true"
+            android:textColor="#FFF"
+            android:textSize="18dip"
+            android:textStyle="bold" />
+        
+        <TextView     
+            android:text="Nearest Landmark"        
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dip"
+            android:layout_marginTop="15dip"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:textSize="18dip"
+            android:textColor="#333"
+            android:textStyle="bold"/>
+        
+        <EditText
+            android:id="@+id/txt_landmark"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:hint="landmark"
+            android:padding="5dip"
+            android:singleLine="true"
+            android:textColor="#FFF"
+            android:textSize="18dip"
+            android:textStyle="bold" />
+        
+        <TextView     
+            android:text="Region"        
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dip"
+            android:layout_marginTop="15dip"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:textSize="18dip"
+            android:textColor="#333"
+            android:textStyle="bold"/>
+        
+         <Spinner
+			android:id="@+id/spin_region"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10dp"
+			android:drawSelectorOnTop="true" />
+        
+    </LinearLayout>
+    
+	    <LinearLayout 
+	        android:id="@+id/date_bar"
+	        android:layout_below="@id/info_bar"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@layout/grey_gradient"
+	        android:gravity="center"
+	        android:layout_margin="10dip"
+	        android:padding="5dip">        
+	                       
+	        <EditText
+	            android:id="@+id/txt_date_of_accident"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dp"
+	            android:layout_weight="1"
+	            android:hint="Date of accident"
+	            android:padding="5dip"
+	            android:singleLine="true"
+	            android:textColor="#FFF"
+	            android:textSize="18dip"
+	            android:textStyle="bold" />
+	        
+	        <ImageButton 
+	            android:id="@+id/img_date_acc"
+	            android:layout_width="45dip"
+	            android:layout_height="45dip"
+	            android:src="@drawable/date"
+	            android:background="@null"/>               
+        
+    </LinearLayout>
+    
+	    <LinearLayout 
+	        android:id="@+id/time_acc_bar"
+	        android:layout_below="@id/date_bar"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@layout/grey_gradient"
+	        android:gravity="center"
+	        android:layout_margin="10dip"
+	        android:padding="5dip">        
+	                       
+	        <EditText
+	            android:id="@+id/txt_time_acc"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dp"
+	            android:layout_weight="1"
+	            android:hint="Time of accident"
+	            android:padding="5dip"
+	            android:singleLine="true"
+	            android:textColor="#FFF"
+	            android:textSize="18dip"
+	            android:textStyle="bold" />
+	        
+	        <ImageButton 
+	            android:id="@+id/img_time_of_acc"
+	            android:layout_width="45dip"
+	            android:layout_height="45dip"
+	            android:src="@drawable/time"
+	            android:background="@null"/>               
+        
+    </LinearLayout>
+    
+	    <LinearLayout 
+	        android:id="@+id/time_rec_bar"
+	        android:layout_below="@id/time_acc_bar"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@layout/grey_gradient"
+	        android:gravity="center"
+	        android:layout_margin="10dip"
+	        android:padding="5dip">        
+	                       
+	        <EditText android:id="@+id/txt_date_rec"     
+	            android:hint="Date of recording"        
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:padding="5dip"
+	            android:layout_marginLeft="10dp"
+	            android:layout_weight="1"
+	            android:singleLine="true"
+	            android:textSize="18dip"
+	            android:textColor="#FFF"
+	            android:textStyle="bold"/>
+	        
+	        <ImageButton 
+	            android:id="@+id/img_date_of_rec"
+	            android:layout_width="45dip"
+	            android:layout_height="45dip"
+	            android:src="@drawable/date"
+	            android:background="@null"/>               
+        
+    </LinearLayout>
+    
+	    <LinearLayout 
+	        android:id="@+id/btn_bar"
+	        android:layout_below="@id/time_rec_bar"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@null"
+	        android:gravity="right"
+	        android:layout_margin="10dip"
+	        android:padding="5dip">                     
+	        	        
+	        <ImageButton 
+	            android:id="@+id/img_next"
+	            android:layout_width="45dip"
+	            android:layout_height="45dip"
+	            android:src="@drawable/next"
+	            android:background="@null"/>               
+        
+    </LinearLayout>
+	
+	
+	</RelativeLayout>
+</ScrollView>

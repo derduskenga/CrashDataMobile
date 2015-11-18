@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CrashData</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_location_time">LocationTime</string>
+    <string name="title_activity_accident_details">AccidentDetails</string>
+
+    <string-array name="yes_no_array">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+    <string-array name="severity_array">
+        <item>Fatal</item>
+        <item>Serious</item>
+        <item>Slight</item>
+        <item>No Injury</item>
+    </string-array>
+    <string-array name="crash_array">
+        <item>Head On</item>
+        <item>Sideswipe</item>
+        <item>Front-Rear</item>
+        <item>Front-Side</item>
+        <item>Pedestrian</item>
+        <item>Rollover</item>
+        <item>Fire</item>
+        <item>Object</item>
+        <item>N/A</item>
+    </string-array>
+    <string-array name="pre_crash_array">
+        <item>Straight Direction</item>
+        <item>Opposite Direction</item>
+        <item>Loss control the left</item>
+        <item>Loss control to the right</item>
+        <item>Left turn</item>
+        <item>Right turn</item>
+        <item>Pass left</item>
+        <item>Pass right</item>
+        <item>U-turn</item>
+        <item>Drive backwards</item>
+        <item>Car breakdown</item>
+        <item>Stand still opening door</item>
+        <item>Stand still</item>
+        <item>Parking</item>
+        <item>Private property</item>
+        <item>Other movement</item>
+    </string-array>
+    <string-array name="weather_array">
+        <item>Normal weather</item>
+        <item>Rain</item>
+        <item>Fog</item>
+        <item>Wind</item>
+        <item>Snow</item>
+        <item>Hail</item>
+        <item>Other weather</item>
+    </string-array>
+    <string-array name="light_array">
+        <item>Daylight</item>
+        <item>Twilight</item>
+        <item>Public lighting</item>
+        <item>Night</item>
+    </string-array>
+    <string-array name="road_surface_array">
+        <item>Dry Road Surface</item>
+        <item>Wet Road Surface</item>
+        <item>Snow on Road Surface</item>
+        <item>Clean Road Surface</item>
+        <item>Dirty Road Surface</item>
+    </string-array>
+    <string-array name="road_signs_array">
+        <item>Speed limit (any)</item>
+        <item>Steep descent ahead</item>
+        <item>Give way</item>
+        <item>No overtaking</item>
+        <item>Sharp bend (left or right)</item>
+        <item>Road narrow ahead (left, right, both)</item>
+        <item>Other</item>
+        <item>Road sign vandalised</item>
+        <item>No road sign</item>
+    </string-array>
+    <string-array name="vehicle_array">
+        <item>V1</item>
+        <item>V2</item>
+        <item>V3</item>
+    </string-array>
+    <string-array name="loading_array">
+        <item>Properly loaded</item>
+        <item>Luggage overloading</item>
+        <item>Excess passangers</item>
+        <item>Cant tell</item>
+    </string-array>
+    <string-array name="insurance_array">
+        <item>APA</item>
+        <item>Blueshield</item>
+        <item>UAP</item>
+        <item>Heritage</item>
+    </string-array>
+    <string-array name="regions_array">
+        <item>Central</item>
+        <item>Coast</item>
+        <item>Eastern</item>
+        <item>Nairobi</item>
+        <item>North Eastern</item>
+        <item>Nyanza</item>
+        <item>Rift Valley</item>
+        <item>Western</item>
+    </string-array>
+
+    <string name="title_activity_accident_details_cont">AccidentDetailsCont</string>
+    <string name="title_activity_vehicle_driver_one">VehicleDriverOne</string>
+    <string name="title_activity_vehicle_driver_two">VehicleDriverTwo</string>
+    <string name="title_activity_vehicle_drive_three">VehicleDriveThree</string>
+    <string name="title_activity_witnesses">Witnesses</string>
+    <string name="title_activity_vehicle_driver_three">VehicleDriverThree</string>
+    <string name="title_activity_police_remarks">PoliceRemarks</string>
+    <string name="title_activity_accident_photos">AccidentPhotos</string>
+    <string name="title_activity_help">Help</string>
+    <string name="title_activity_emergency">Emergency</string>
+    <string name="title_activity_upload_audio_demo">UploadAudioDemo</string>
+    <string name="title_activity_upload_file">UploadFile</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="enable_data_or_leave_airplane_mode">Go to settings and enable data on Mobile networks or leave airplane mode</string>
+    <string name="title_activity_register_biz_data">Register Business Location</string>
+    <string name="settings">Settings</string>
+    <string name="cancel">Cancel</string>
+    <string name="title_activity_get_gpslocation">GetGPSLocation</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_vehicle_type_list">VehicleTypeList</string>
+    <string name="title_activity_accident_causes">AccidentCauses</string>
+    <string name="title_activity_test">Test</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

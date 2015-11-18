@@ -1,0 +1,282 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".Witnesses" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/top_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/panel_shape"
+            android:gravity="center"
+            android:padding="10dip" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Witnesses"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#336699"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/details_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top_bar"
+            android:layout_margin="10dip"
+            android:background="@layout/grey_gradient"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dip" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dip"
+                android:layout_weight="1"
+                android:padding="5dip"
+                android:singleLine="true"
+                android:text="Witness 1"
+                android:textColor="#333"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:padding="5dip"
+                        android:singleLine="true"
+                        android:text="Click icon to record video"
+                        android:textColor="#333"
+                        android:textSize="18dip"
+                        android:textStyle="bold" />
+
+                    <ImageButton
+                        android:id="@+id/img_audio1"
+                        android:layout_width="32dip"
+                        android:layout_height="45dip"
+                        android:background="@null"
+                        android:src="@drawable/video_icon" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dip"
+                android:layout_weight="1"
+                android:padding="5dip"
+                android:singleLine="true"
+                android:text="Witness 2"
+                android:textColor="#333"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:padding="5dip"
+                        android:singleLine="true"
+                        android:text="Click icon to record video"
+                        android:textColor="#333"
+                        android:textSize="18dip"
+                        android:textStyle="bold" />
+
+                    <ImageButton
+                        android:id="@+id/img_audio2"
+                        android:layout_width="32dip"
+                        android:layout_height="45dip"
+                        android:background="@null"
+                        android:src="@drawable/video_icon" />
+                </TableRow>
+            </TableLayout>
+            
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dip"
+                android:layout_weight="1"
+                android:padding="5dip"
+                android:singleLine="true"
+                android:text="Any property damaged?"
+                android:textColor="#333"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/any_property_damaged_yes_no"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb_property_damaged_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/rb_property_damaged_yno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txtv_property_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dip"
+                android:layout_weight="1"
+                android:padding="5dip"
+                android:singleLine="true"
+                android:text="Name of damaged property"
+                android:textColor="#333"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txt_property_name"
+                android:layout_width="fill_parent"
+                android:layout_height="120dip"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:hint="Property Name"
+                android:padding="5dip"
+                android:singleLine="true"
+                android:textColor="#FFF"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtv_property_category"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dip"
+                android:layout_weight="1"
+                android:padding="5dip"
+                android:singleLine="true"
+                android:text="Property category"
+                android:textColor="#333"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rg_category"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb_cat_public"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Public" />
+
+                <RadioButton
+                    android:id="@+id/rb_cat_private"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Private" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txtv_property_description"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dip"
+                android:layout_weight="1"
+                android:padding="5dip"
+                android:singleLine="true"
+                android:text="Description"
+                android:textColor="#333"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txt_description"
+                android:layout_width="fill_parent"
+                android:layout_height="120dip"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:hint="Description"
+                android:padding="5dip"
+                android:textColor="#FFF"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/details_bar"
+            android:layout_margin="10dip"
+            android:background="@null"
+            android:padding="5dip" >
+
+            <ImageButton
+                android:id="@+id/img_prev"
+                android:layout_width="45dip"
+                android:layout_height="45dip"
+                android:background="@null"
+                android:src="@drawable/prev" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/img_next"
+                android:layout_width="45dip"
+                android:layout_height="45dip"
+                android:background="@null"
+                android:src="@drawable/next" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

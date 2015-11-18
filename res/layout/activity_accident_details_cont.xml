@@ -1,0 +1,149 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".AccidentDetailsCont" >
+    
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" >
+	
+	    <LinearLayout 
+        android:id="@+id/top_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/panel_shape"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:padding="10dip">        
+        
+        <TextView     
+            android:text="Accident Details"        
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#336699"
+            android:textStyle="bold"/>        
+       
+    </LinearLayout>
+    
+	    <LinearLayout 
+        android:id="@+id/acc_bar"
+        android:layout_below="@id/top_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@layout/grey_gradient"
+        android:gravity="center"
+        android:layout_margin="10dip"
+        android:padding="5dip">        
+        
+        <TextView     
+            android:text="Road Surface"        
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dip"
+            android:layout_marginTop="15dip"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:textSize="18dip"
+            android:textColor="#333"
+            android:textStyle="bold"/>
+        
+        <Spinner
+			android:id="@+id/spin_road_surface"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10dp"
+			android:drawSelectorOnTop="true" />
+        
+        <TextView     
+            android:text="Road Signs nearby (Max 200M)"        
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dip"
+            android:layout_marginTop="15dip"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:textSize="18dip"
+            android:textColor="#333"
+            android:textStyle="bold"/>
+        
+        <Spinner
+			android:id="@+id/spin_road_signs"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10dp"
+			android:drawSelectorOnTop="true" />      
+        
+    </LinearLayout>
+    
+	    <LinearLayout 
+        android:id="@+id/info_bar"
+        android:layout_below="@id/acc_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@layout/grey_gradient"
+        android:gravity="center"
+        android:layout_margin="10dip"
+        android:padding="5dip">        
+        
+        <TextView     
+            android:text="Other"        
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dip"
+            android:layout_marginTop="15dip"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:textSize="18dip"
+            android:textColor="#333"
+            android:textStyle="bold"/>
+        
+        <EditText
+            android:id="@+id/txt_other"
+            android:layout_width="fill_parent"
+            android:layout_height="175dip"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:hint="Other road signs"
+            android:padding="5dip"
+            android:textColor="#FFF"
+            android:textSize="18dip"
+            android:textStyle="bold" />
+
+        </LinearLayout>
+    
+	   
+    
+	    <LinearLayout 
+	        android:id="@+id/btn_bar"
+	        android:layout_below="@id/info_bar"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@null"
+	        android:gravity="right"
+	        android:layout_margin="10dip"
+	        android:padding="5dip">                     
+	        	        
+	        <ImageButton 
+	            android:id="@+id/img_next"
+	            android:layout_width="45dip"
+	            android:layout_height="45dip"
+	            android:src="@drawable/next"
+	            android:background="@null"/>               
+        
+    </LinearLayout>
+	
+	
+	</RelativeLayout>
+</ScrollView>

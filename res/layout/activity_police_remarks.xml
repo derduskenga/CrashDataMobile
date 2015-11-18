@@ -1,0 +1,159 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".PoliceRemarks" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/top_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/panel_shape"
+            android:gravity="center"
+            android:padding="10dip" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Police Remarks"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#336699"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/details_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top_bar"
+            android:layout_margin="10dip"
+            android:background="@layout/grey_gradient"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dip" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dip"
+                android:layout_weight="1"
+                android:padding="5dip"
+                android:singleLine="true"
+                android:text="Cause code"
+                android:textColor="#333"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TableRow>
+
+                    <EditText
+                        android:id="@+id/txt_cause_code"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:hint="Cause code"
+                        android:padding="5dip"
+                        android:singleLine="true"
+                        android:textColor="#333"
+                        android:textSize="18dip"
+                        android:textStyle="bold" />
+
+                    <ImageButton
+                        android:id="@+id/img_cause_code"
+                        android:layout_width="32dip"
+                        android:layout_height="45dip"
+                        android:background="@null"
+                        android:src="@drawable/quesn" />
+                </TableRow>
+            </TableLayout>
+
+            <RadioGroup
+                android:id="@+id/rg_remarks"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/rb_rem_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Type In" />
+
+                <RadioButton
+                    android:id="@+id/rb_rem_voice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Use voice entry" />
+            </RadioGroup>
+
+            <ImageButton
+                android:id="@+id/img_reload_mic"
+                android:layout_width="32dip"
+                android:layout_height="45dip"
+                android:background="@null"
+                android:src="@drawable/reloaded" />
+
+            <EditText
+                android:id="@+id/txt_police_remarks"
+                android:layout_width="fill_parent"
+                android:layout_height="200dip"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:hint="You remarks here..."
+                android:padding="5dip"
+                android:textColor="#FFF"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/details_bar"
+            android:layout_margin="10dip"
+            android:background="@null"
+            android:padding="5dip" >
+
+            <ImageButton
+                android:id="@+id/img_prev"
+                android:layout_width="45dip"
+                android:layout_height="45dip"
+                android:background="@null"
+                android:src="@drawable/prev" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/img_next"
+                android:layout_width="45dip"
+                android:layout_height="45dip"
+                android:background="@null"
+                android:src="@drawable/next" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

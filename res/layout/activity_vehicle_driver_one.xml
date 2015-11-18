@@ -1,0 +1,307 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".VehicleDriverOne" >
+    
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" >
+	
+	    <LinearLayout 
+        android:id="@+id/top_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/panel_shape"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:padding="10dip">        
+        
+        <TextView     
+            android:text="Vehicle/Driver Details"        
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#336699"
+            android:textStyle="bold"/>        
+       
+    </LinearLayout>
+    
+	    <LinearLayout 
+	        android:id="@+id/details_bar"
+	        android:layout_below="@id/top_bar"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:background="@layout/grey_gradient"
+	        android:gravity="center"
+	        android:layout_margin="10dip"
+	        android:padding="5dip">        
+        
+        <TextView     
+            android:text="Select Vehicle"        
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dip"
+            android:layout_marginTop="15dip"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:textSize="18dip"
+            android:textColor="#333"
+            android:textStyle="bold"/>
+        
+        <Spinner
+			android:id="@+id/spin_vehicle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10dp"
+			android:drawSelectorOnTop="true" />
+        
+        <TextView     
+            android:text="Vehicle Registration Number"        
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dip"
+            android:layout_marginTop="15dip"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:textSize="18dip"
+            android:textColor="#333"
+            android:textStyle="bold"/>
+        
+        <EditText android:id="@+id/txt_reg_no"     
+            android:hint="Reg number"        
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dip"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:textSize="18dip"
+            android:textColor="#FFF"
+            android:textStyle="bold"/>
+        
+        <TableLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:layout_marginTop="15dip"
+	        android:gravity="center">
+	        
+            <TableRow>
+                <TextView     
+		            android:text="Vehicle Type"        
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:padding="5dip"
+		            android:layout_marginLeft="10dp"
+		            android:layout_weight="1"
+		            android:singleLine="true"
+		            android:textSize="18dip"
+		            android:textColor="#333"
+		            android:textStyle="bold"/>
+                
+                <ImageButton 
+		            android:id="@+id/img_veh_type"
+		            android:layout_width="32dip"
+		            android:layout_height="45dip"
+		            android:src="@drawable/quesn"
+		            android:background="@null"/> 
+                
+            </TableRow>
+	    </TableLayout>
+               
+        <EditText android:id="@+id/txt_veh_type"    
+            android:hint="vehicle type"        
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dip"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:textSize="18dip"
+            android:textColor="#FFF"
+            android:textStyle="bold"/>
+        
+        <TextView     
+            android:text="Loading"        
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dip"
+            android:layout_marginTop="15dip"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:textSize="18dip"
+            android:textColor="#333"
+            android:textStyle="bold"/>
+        
+        <Spinner
+			android:id="@+id/spin_loading"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10dp"
+			android:drawSelectorOnTop="true" />
+        
+    </LinearLayout>
+    
+	    <TableLayout 
+	        android:id="@+id/defects_bar"
+	        android:layout_below="@id/details_bar"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:background="@layout/grey_gradient"
+	        android:gravity="center"
+	        android:layout_margin="10dip"
+	        android:padding="5dip">
+        <TextView     
+            android:text="Vehicle Defect"        
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dip"
+            android:layout_marginTop="15dip"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:textSize="18dip"
+            android:textColor="#333"
+            android:textStyle="bold"/>
+        
+	        <TableRow >	            
+	            <CheckBox android:id="@+id/check_defective_lights"
+					style="?android:attr/starStyle"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+	            <TextView     
+		            android:text="Defective lights"        
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:padding="5dip"
+		            android:layout_marginLeft="10dp"
+		            android:layout_weight="1"
+		            android:singleLine="true"
+		            android:textSize="18dip"
+		            android:textColor="#333"
+		            android:textStyle="bold"/>
+	        </TableRow>
+	        
+	        <TableRow >	            
+	            <CheckBox android:id="@+id/check_bad_tire"
+					style="?android:attr/starStyle"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+	            <TextView     
+		            android:text="Bad Tire(s)"        
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:padding="5dip"
+		            android:layout_marginLeft="10dp"
+		            android:layout_weight="1"
+		            android:singleLine="true"
+		            android:textSize="18dip"
+		            android:textColor="#333"
+		            android:textStyle="bold"/>
+	        </TableRow>
+	        
+	        <TableRow >	            
+	            <CheckBox android:id="@+id/check_side_mirrors"
+					style="?android:attr/starStyle"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+	            <TextView     
+		            android:text="No/Bad side mirrors"        
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:padding="5dip"
+		            android:layout_marginLeft="10dp"
+		            android:layout_weight="1"
+		            android:singleLine="true"
+		            android:textSize="18dip"
+		            android:textColor="#333"
+		            android:textStyle="bold"/>
+	        </TableRow>
+	        
+	       
+	        
+	        <TableRow >	            
+	            <CheckBox android:id="@+id/check_general"
+					style="?android:attr/starStyle"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+	            <TextView     
+		            android:text="Generally Road Unworthy"        
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:padding="5dip"
+		            android:layout_marginLeft="10dp"
+		            android:layout_weight="1"
+		            android:singleLine="true"
+		            android:textSize="18dip"
+		            android:textColor="#333"
+		            android:textStyle="bold"/>
+	        </TableRow>
+	        
+	         <TableRow >	            
+	            <CheckBox android:id="@+id/check_hard_to_say"
+					style="?android:attr/starStyle"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+	            <TextView     
+		            android:text="Hard to say"        
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:padding="5dip"
+		            android:layout_marginLeft="10dp"
+		            android:layout_weight="1"
+		            android:singleLine="true"
+		            android:textSize="18dip"
+		            android:textColor="#333"
+		            android:textStyle="bold"/>
+	        </TableRow>
+	                
+	       
+	     </TableLayout>
+    
+	    
+	    <LinearLayout 
+	        android:id="@+id/btn_bar"
+	        android:layout_below="@id/defects_bar"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@null"
+	        android:layout_margin="10dip"
+	        android:padding="5dip">     
+	        
+	        <ImageButton 
+	            android:id="@+id/img_prev"
+	            android:layout_width="45dip"
+	            android:layout_height="45dip"
+	            android:src="@drawable/prev"
+	            android:background="@null"/> 
+	            
+	        <View
+	            android:layout_width="0dp"
+	            android:layout_height="0dp"
+	            android:layout_weight="1"
+	            /> 
+	        	        
+	        <ImageButton 
+	            android:id="@+id/img_next"
+	            android:layout_width="45dip"
+	            android:layout_height="45dip"
+	            android:src="@drawable/next"
+	            android:background="@null"/>               
+        
+    </LinearLayout>
+	
+	
+	</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,231 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".VehicleDriverTwo" >
+    
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" >
+	
+	    <LinearLayout 
+        android:id="@+id/top_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/panel_shape"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:padding="10dip">        
+        
+        <TextView     
+            android:text="Vehicle/Driver Details"        
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#336699"
+            android:textStyle="bold"/>        
+       
+    </LinearLayout>
+    
+	    <LinearLayout 
+	        android:id="@+id/details_bar"
+	        android:layout_below="@id/top_bar"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:background="@layout/grey_gradient"
+	        android:gravity="center"
+	        android:layout_margin="10dip"
+	        android:padding="5dip">        
+	        
+	        <TextView     
+	            android:text="Vehicle Registered To (Individual/Company/Sacco)"        
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:padding="5dip"
+	            android:layout_marginTop="15dip"
+	            android:layout_marginLeft="10dp"
+	            android:layout_weight="1"
+	            android:singleLine="true"
+	            android:textSize="18dip"
+	            android:textColor="#333"
+	            android:textStyle="bold"/>
+	        
+	        <EditText android:id="@+id/txt_reg_name"     
+	            android:hint="Registered to.."        
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:padding="5dip"
+	            android:layout_marginLeft="10dp"
+	            android:layout_weight="1"
+	            android:singleLine="true"
+	            android:textSize="18dip"
+	            android:textColor="#FFF"
+	            android:textStyle="bold"/>
+	        
+	        <TextView     
+	            android:text="Vehicle Make/Model"        
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:padding="5dip"
+	            android:layout_marginTop="15dip"
+	            android:layout_marginLeft="10dp"
+	            android:layout_weight="1"
+	            android:singleLine="true"
+	            android:textSize="18dip"
+	            android:textColor="#333"
+	            android:textStyle="bold"/>
+	        
+	        <EditText android:id="@+id/txt_model"     
+	            android:hint="Vehicle Make/Model"        
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:padding="5dip"
+	            android:layout_marginLeft="10dp"
+	            android:layout_weight="1"
+	            android:singleLine="true"
+	            android:textSize="18dip"
+	            android:textColor="#FFF"
+	            android:textStyle="bold"/>
+	     
+	        
+	        <TextView     
+	            android:text="Primary Insurance Company"        
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:padding="5dip"
+	            android:layout_marginTop="15dip"
+	            android:layout_marginLeft="10dp"
+	            android:layout_weight="1"
+	            android:singleLine="true"
+	            android:textSize="18dip"
+	            android:textColor="#333"
+	            android:textStyle="bold"/>
+	        
+	        <Spinner
+				android:id="@+id/spin_insurance"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="10dp"
+				android:drawSelectorOnTop="true" />
+	        
+	        <TextView     
+	            android:text="Insurance policy number"        
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:padding="5dip"
+	            android:layout_marginTop="15dip"
+	            android:layout_marginLeft="10dp"
+	            android:layout_weight="1"
+	            android:singleLine="true"
+	            android:textSize="18dip"
+	            android:textColor="#333"
+	            android:textStyle="bold"/>
+	        
+	        <EditText android:id="@+id/txt_policy_no"    
+	            android:hint="Insurance policy number"        
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:padding="5dip"
+	            android:layout_marginLeft="10dp"
+	            android:layout_weight="1"
+	            android:singleLine="true"
+	            android:textSize="18dip"
+	            android:textColor="#FFF"
+	            android:textStyle="bold"/>
+	        
+	        <TextView     
+	            android:text="Insurance Expired?"        
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:padding="5dip"
+	            android:layout_marginTop="15dip"
+	            android:layout_marginLeft="10dp"
+	            android:layout_weight="1"
+	            android:singleLine="true"
+	            android:textSize="18dip"
+	            android:textColor="#333"
+	            android:textStyle="bold"/>
+	        
+	        <RadioGroup android:id="@+id/rg_insurance"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal" >
+					
+					<RadioButton android:id="@+id/rb_ins_yes"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="yes" />
+					<RadioButton android:id="@+id/rb_ins_no"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:checked="true"
+						android:text="no" />
+			</RadioGroup>
+			
+	        <TextView     
+	            android:text="Other(e.g multiple insurance)"        
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:padding="5dip"
+	            android:layout_marginTop="15dip"
+	            android:layout_marginLeft="10dp"
+	            android:layout_weight="1"
+	            android:singleLine="true"
+	            android:textSize="18dip"
+	            android:textColor="#333"
+	            android:textStyle="bold"/>
+	        
+	        <EditText android:id="@+id/txt_other"    
+	            android:hint="Other"        
+	            android:layout_width="fill_parent"
+	            android:layout_height="90dip"
+	            android:padding="5dip"
+	            android:layout_marginLeft="10dp"
+	            android:layout_weight="1"
+	            android:textSize="18dip"
+	            android:textColor="#FFF"
+	            android:textStyle="bold"/>
+        
+    </LinearLayout>
+    
+	    
+	    <LinearLayout 
+	        android:id="@+id/btn_bar"
+	        android:layout_below="@id/details_bar"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@null"
+	        android:layout_margin="10dip"
+	        android:padding="5dip">     
+	        
+	        <ImageButton 
+	            android:id="@+id/img_prev"
+	            android:layout_width="45dip"
+	            android:layout_height="45dip"
+	            android:src="@drawable/prev"
+	            android:background="@null"/> 
+	            
+	        <View
+	            android:layout_width="0dp"
+	            android:layout_height="0dp"
+	            android:layout_weight="1"
+	            /> 
+	        	        
+	        <ImageButton 
+	            android:id="@+id/img_next"
+	            android:layout_width="45dip"
+	            android:layout_height="45dip"
+	            android:src="@drawable/next"
+	            android:background="@null"/>               
+        
+    </LinearLayout>
+	
+	
+	</RelativeLayout>
+</ScrollView>

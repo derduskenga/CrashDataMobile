@@ -1,0 +1,133 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".Login" >
+    
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" >
+	
+	    <LinearLayout 
+        android:id="@+id/top_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/panel_shape"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:padding="10dip">        
+        
+        <TextView     
+            android:text="Login"        
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#336699"
+            android:textStyle="bold"/>        
+       
+    </LinearLayout>
+    
+	    <LinearLayout 
+	        android:id="@+id/details_bar"
+	        android:layout_below="@id/top_bar"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:background="@layout/grey_gradient"
+	        android:gravity="center"
+	        android:layout_margin="10dip"
+	        android:padding="5dip">        	               
+	        
+	        <TextView     
+	            android:text="Police Number"        
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:padding="5dip"
+	            android:layout_marginTop="15dip"
+	            android:layout_marginLeft="10dp"
+	            android:layout_weight="1"
+	            android:singleLine="true"
+	            android:textSize="18dip"
+	            android:textColor="#333"
+	            android:textStyle="bold"/>
+	            
+            <EditText android:id="@+id/txt_police_no"    
+	            android:hint="police number"        
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:padding="5dip"
+	            android:layout_marginLeft="10dp"
+	            android:layout_weight="1"
+	            android:singleLine="true"
+	            android:textSize="18dip"
+	            android:textColor="#333"
+	            android:textStyle="bold"/>
+            
+            <TextView     
+	            android:text="Password"        
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:padding="5dip"
+	            android:layout_marginTop="15dip"
+	            android:layout_marginLeft="10dp"
+	            android:layout_weight="1"
+	            android:singleLine="true"
+	            android:textSize="18dip"
+	            android:textColor="#333"
+	            android:textStyle="bold"/>
+	            
+            <EditText android:id="@+id/txt_password"     
+	            android:password="true"        
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:padding="5dip"
+	            android:layout_marginLeft="10dp"
+	            android:layout_weight="1"
+	            android:singleLine="true"
+	            android:textSize="18dip"
+	            android:textColor="#333"
+	            android:textStyle="bold"/>
+            
+            <TextView android:id="@+id/txt_error"          
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:padding="5dip"
+	            android:layout_marginTop="15dip"
+	            android:layout_marginLeft="10dp"
+	            android:layout_weight="1"
+	            android:singleLine="true"
+	            android:textSize="18dip"
+	            android:textColor="#F00"
+	            android:textStyle="bold"/>
+        
+    </LinearLayout>
+    
+	    
+	    <LinearLayout 
+	        android:id="@+id/btn_bar"
+	        android:layout_below="@id/details_bar"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@null"
+	        android:layout_margin="10dip"
+	        android:padding="5dip">     
+	        
+	       <Button android:id="@+id/btn_login"
+	           android:text="Login"
+	           android:layout_width="fill_parent"
+	           android:layout_height="wrap_content"
+	           android:padding="5dip"
+	           android:layout_weight="1"
+	           android:textSize="18dip"
+	           android:textColor="#336699"
+	           android:textStyle="bold"/>               
+        
+    </LinearLayout>	
+	
+	</RelativeLayout>
+</ScrollView>

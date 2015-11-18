@@ -1,0 +1,389 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".VehicleDriverThree" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/top_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/panel_shape"
+            android:gravity="center"
+            android:padding="10dip" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Vehicle/Driver Details"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#336699"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/details_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top_bar"
+            android:layout_margin="10dip"
+            android:background="@layout/grey_gradient"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dip" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dip"
+                android:layout_weight="1"
+                android:padding="5dip"
+                android:singleLine="true"
+                android:text="Number of persons dead"
+                android:textColor="#333"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txt_persons_dead"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:hint="Persons dead"
+                android:inputType="number"
+                android:padding="5dip"
+                android:singleLine="true"
+                android:textColor="#FFF"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dip"
+                android:layout_weight="1"
+                android:padding="5dip"
+                android:singleLine="true"
+                android:text="No. of persons seriously injured"
+                android:textColor="#333"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txt_persons_ser_injured"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:hint="No. of persons seriously injured"
+                android:inputType="number"
+                android:padding="5dip"
+                android:singleLine="true"
+                android:textColor="#FFF"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dip"
+                android:layout_weight="1"
+                android:padding="5dip"
+                android:singleLine="true"
+                android:text="No of persons with minor injuries"
+                android:textColor="#333"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txt_persons_minor_injuries"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:hint="No of persons with minor injuries"
+                android:inputType="number"
+                android:padding="5dip"
+                android:singleLine="true"
+                android:textColor="#FFF"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dip"
+                android:layout_weight="1"
+                android:padding="5dip"
+                android:singleLine="true"
+                android:text="Driver license Number"
+                android:textColor="#333"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txt_driver_license_no"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:hint="License no"
+                android:padding="5dip"
+                android:singleLine="true"
+                android:textColor="#FFF"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dip"
+                android:layout_weight="1"
+                android:padding="5dip"
+                android:singleLine="true"
+                android:text="Driver Name"
+                android:textColor="#333"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txt_driver_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:hint="Driver Name"
+                android:padding="5dip"
+                android:singleLine="true"
+                android:textColor="#FFF"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dip"
+                android:layout_weight="1"
+                android:padding="5dip"
+                android:singleLine="true"
+                android:text="Driver Gender"
+                android:textColor="#333"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rg_driver_gender"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb_dri_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/rb_dri_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dip"
+                android:layout_weight="1"
+                android:padding="5dip"
+                android:singleLine="true"
+                android:text="Driver dead?"
+                android:textColor="#333"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+           
+            <RadioGroup
+                android:id="@+id/rg_driver_dead"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb_dri_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="yes" />
+
+                <RadioButton
+                    android:id="@+id/rb_dri_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="no" />
+            </RadioGroup>
+            
+            
+            
+            
+
+            <TextView
+                android:id="@+id/txtview_driver_injured"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dip"
+                android:layout_weight="1"
+                android:padding="5dip"
+                android:singleLine="true"
+                android:text="Driver Injured?"
+                android:textColor="#333"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rg_driver_injured"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb_dri_inj_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="yes" />
+
+                <RadioButton
+                    android:id="@+id/rb_dri_inj_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="no" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dip"
+                android:layout_weight="1"
+                android:padding="5dip"
+                android:singleLine="true"
+                android:text="Alcohol Influence?"
+                android:textColor="#333"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rg_alcohol_test"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/rb_alc_suspected"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Suspected" />
+
+                <RadioButton
+                    android:id="@+id/rb_alc_not_suspected"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Not suspected" />
+
+                <RadioButton
+                    android:id="@+id/rb_alc_refused_test"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Refused Test" />
+
+                <RadioButton
+                    android:id="@+id/rb_alc_no_test_done_driver_dead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No test done: driver injured" />
+
+                <RadioButton
+                    android:id="@+id/rb_alc_no_test_done_serious_injury"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No test done:driver dead" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dip"
+                android:layout_weight="1"
+                android:padding="5dip"
+                android:singleLine="true"
+                android:text="Any Discrepancy?"
+                android:textColor="#333"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txt_discrepancy"
+                android:layout_width="fill_parent"
+                android:layout_height="90dip"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:hint="wrong driver...(this is a tip)"
+                android:padding="5dip"
+                android:textColor="#FFF"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/details_bar"
+            android:layout_margin="10dip"
+            android:background="@null"
+            android:padding="5dip" >
+
+            <ImageButton
+                android:id="@+id/img_prev"
+                android:layout_width="45dip"
+                android:layout_height="45dip"
+                android:background="@null"
+                android:src="@drawable/prev" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/img_next"
+                android:layout_width="45dip"
+                android:layout_height="45dip"
+                android:background="@null"
+                android:src="@drawable/next" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

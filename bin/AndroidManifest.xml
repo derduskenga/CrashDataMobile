@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cd.crashdata"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="14" />
+
+    <!-- Accessing camera hardware -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.cd.crashdata.SplashScreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.cd.crashdata.ManageOptions"
+            android:label="Manage Options" >
+        </activity>
+        <activity
+            android:name="com.cd.crashdata.UploadVideo"
+            android:label="Upload video" >
+        </activity>
+        <activity
+            android:name="com.cd.crashdata.LocationTime"
+            android:label="@string/title_activity_location_time" >
+        </activity>
+        <activity
+            android:name="com.cd.crashdata.AccidentDetailsCont"
+            android:label="@string/title_activity_accident_details" >
+        </activity>
+        <activity
+            android:name="com.cd.crashdata.VehicleDriverOne"
+            android:label="@string/title_activity_vehicle_driver_one" >
+        </activity>
+        <activity
+            android:name="com.cd.crashdata.VehicleDriverTwo"
+            android:label="@string/title_activity_vehicle_driver_two" >
+        </activity>
+        <activity
+            android:name="com.cd.crashdata.VehicleDriverThree"
+            android:label="@string/title_activity_vehicle_drive_three" >
+        </activity>
+        <activity
+            android:name="com.cd.crashdata.Witnesses"
+            android:label="@string/title_activity_witnesses" >
+        </activity>
+        <activity
+            android:name="com.cd.crashdata.PoliceRemarks"
+            android:label="@string/title_activity_police_remarks" >
+        </activity>
+        <activity
+            android:name="com.cd.crashdata.AccidentPhotos"
+            android:label="@string/title_activity_accident_photos" >
+        </activity>
+        <activity
+            android:name="com.cd.crashdata.Help"
+            android:label="@string/title_activity_help" >
+        </activity>
+        <activity
+            android:name="com.cd.crashdata.Emergency"
+            android:label="@string/title_activity_emergency" >
+        </activity>
+        <activity
+            android:name="com.cd.crashdata.AccidentDetails"
+            android:label="@string/title_activity_upload_audio_demo" >
+        </activity>
+        <activity
+            android:name="com.cd.crashdata.UploadAudioDemo"
+            android:label="@string/title_activity_upload_file" >
+        </activity>
+        <activity
+            android:name="com.cd.crashdata.GetGPSLocation"
+            android:label="@string/title_activity_get_gpslocation" >
+        </activity>
+        <activity
+            android:name="com.cd.crashdata.Login"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name="com.cd.crashdata.VehicleTypeList"
+            android:label="@string/title_activity_vehicle_type_list" >
+        </activity>
+        <activity
+            android:name="com.cd.crashdata.AccidentCauses"
+            android:label="@string/title_activity_accident_causes" >
+        </activity>
+        <activity
+            android:name="com.cd.crashdata.Test"
+            android:label="@string/title_activity_test" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,100 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".AccidentPhotos" >
+    
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" >
+	
+	    <LinearLayout 
+        android:id="@+id/top_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/panel_shape"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:padding="10dip">        
+        
+        <TextView     
+            android:text="Accident Photos"        
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#336699"
+            android:textStyle="bold"/>        
+       
+    </LinearLayout>
+    
+	    <LinearLayout 
+	        android:id="@+id/details_bar"
+	        android:layout_below="@id/top_bar"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:background="@layout/grey_gradient"
+	        android:gravity="center"
+	        android:layout_margin="10dip"
+	        android:padding="5dip">        	               
+	        
+	        <ImageView
+		        android:id="@+id/img_photo"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/user" />
+	        
+	        <TextView
+	            android:id="@+id/txtv_take_photo"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:background="#4a4a4a"
+	            android:gravity="center"
+	            android:singleLine="true"
+	            android:text="Take a photo"
+	            android:textAppearance="?android:attr/textAppearanceLarge"
+	            android:textColor="#336699"
+	            android:textStyle="bold" />
+        
+    </LinearLayout>
+    
+	    
+	    <LinearLayout 
+	        android:id="@+id/btn_bar"
+	        android:layout_below="@id/details_bar"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@null"
+	        android:layout_margin="10dip"
+	        android:padding="5dip">     
+	        
+	        <ImageButton 
+	            android:id="@+id/img_prev"
+	            android:layout_width="45dip"
+	            android:layout_height="45dip"
+	            android:src="@drawable/prev"
+	            android:background="@null"/> 
+	            
+	        <View
+	            android:layout_width="0dp"
+	            android:layout_height="0dp"
+	            android:layout_weight="1"
+	            /> 
+	        	        
+	        <ImageButton 
+	            android:id="@+id/img_next"
+	            android:layout_width="45dip"
+	            android:layout_height="45dip"
+	            android:src="@drawable/next"
+	            android:background="@null"/>               
+        
+    </LinearLayout>	
+	
+	</RelativeLayout>
+</ScrollView>
